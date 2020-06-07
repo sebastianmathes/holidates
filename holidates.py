@@ -44,3 +44,8 @@ def calc_holidays(year: int = date.today().year) -> Dict:
         holidates[k] = easter(year) + v
     
     return holidates
+
+if __name__ == "__main__":
+    x = calc_holidays()
+    for k,v in x.items():
+        print(k, ":", v)
